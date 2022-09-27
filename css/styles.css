@@ -1,0 +1,352 @@
+:root {
+    --main-text-color:#212121;
+    --grey-text:#757575;
+    --blue:#2196F3;
+    --logo-color:#000000;
+    --white:#FFFFFF;
+    --less-white-for-bg: #F5F4FA;
+    --footer-contacts:rgba(255, 255, 255, 0.6);
+    --bg-grey: #2F303A;
+    --btn-box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+h1, 
+h2, 
+h3 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: var(--white);
+}
+
+/*   ------------------НАВІГАЦІЯ--------------------- */
+
+.header > .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-txt-header,
+.logo-txt-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+}
+
+.container > .logo-txt-header {
+    display: flex;
+    margin: 24px 93px 25px 0;
+
+    color: var(--logo-color);
+}
+
+.logo-span {
+    color: var(--blue);
+}
+
+.nav-list,
+.contact-list {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contact-list {
+    margin-left: auto;
+}
+
+.nav-li:not(:last-child),
+.contact-li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--main-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link.current,
+.contact-link-header:hover,
+.contact-link-header:focus {
+    color: var(--blue)
+}
+
+.contact-link-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-text);
+}
+
+/* -----------------------HERO----------------------- */
+.order {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
+
+    background-color: var(--bg-grey);
+}
+
+.order-descr {
+    display: block;
+    height: 120px;
+    width: 696px;
+    margin: 0 auto 30px auto;
+
+    color:var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    display: block;
+    height: 50px;
+    width: 216px;
+    border-radius: 4px;
+    margin: 30px auto 0 auto;
+
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px var(--btn-box-shadow);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color:var(--white);
+    font-family: inherit;
+}
+
+/* -------------------ОСОБЛИВОСТІ---------------- */
+.unics-list {
+    display: flex;
+    align-items: flex-start;
+    height: 98px;
+    width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 94px;
+
+}
+
+.unic-li {
+    display: inline-block;
+    height: 98px;
+    width: 270px;
+}
+
+.unic-li:not(:last-child) {
+    margin-right: 30px;
+}
+.unic-name {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.unic-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--grey-text);
+}
+
+/* ---------------ДІЯЛЬНІСТЬ------------- */
+.activity {
+    margin-bottom: 94px;
+}
+
+.activity-list {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.activiti-li:not(:last-child) {
+    margin-right: 30px;
+}
+/* -------------------КОМАНДА---------------- */
+.team {
+    padding: 94px 0;
+
+    background-color: var(--less-white-for-bg);
+}
+
+.teammate-card {
+    display: inline-block;
+    height: 368px;
+    width: 270px;
+}
+.teammate-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.teammate-card > img {
+    margin-bottom: 30px;
+}
+
+.activity-head,
+.team-head {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+ul.team-list > li {
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.teammate-name,
+.teammate-career {
+    display: block;
+
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.teammate-name {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+}
+
+.teammate-career {
+    color: var(--grey-text);
+}
+
+/* ------------------FOOTER------------------ */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--bg-grey);
+}
+
+.logo-txt-footer {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.adress-street,
+.contact-link-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.adress-street {
+    margin-bottom: 9px;
+    color: var(--white);
+}
+
+.contact-link-footer {
+    color: var(--footer-contacts);
+}
+
+.contact-link-footer:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contact-link-footer:hover,
+.contact-link-footer:focus {
+    color: var(--blue);
+}
+
+address {
+    font-style: normal;
+}
+
+/* -----------------------------------PORTFOLIO PAGE BELOW------------------------------- */
+.portfolio-btn {
+    background-color: var(--less-white-for-bg);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+.portfolio-list > li {
+    background-color: var(--white);
+}
+
+.portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-descr {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--grey-text);
+}
