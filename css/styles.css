@@ -175,7 +175,8 @@ ul {
 .unic-li {
     display: inline-block;
     height: 98px;
-    width: 270px;
+    /* width: 270px; */
+    width: calc((100% - 90px) / 4);
 }
 
 .unic-li:not(:last-child) {
